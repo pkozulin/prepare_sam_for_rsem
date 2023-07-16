@@ -8,3 +8,5 @@ Before using this script, ensure the SAM input file:
 - is sorted by name (so all multi-mapping reads are adjacent, although not necessarily with adjacent mate pairs).
 - has been filtered for mate pairs only (e.g. samtools view -f 3 sam_file). Note that this this only filters based on the FLAG id, and does not actually check if there are two reads present for each alignment. Thus, after this filter there may still be individual reads present with PAIRED FLAG id's but without their mate pair present.
 - has >= 2 empty rows at end (e.g. echo "" >> sam_file)
+
+Call from `main.py`
